@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  redis-server:
+    image: 'redis'
+  node-app:
+    restart: always
+    build: .
+    ports:
+      - "8075:8095"
+
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/aws-lambda, @types/aws4, @types/chai, @types/cucumber, @types/jest, @types/nock, @types/node, @types/redis, @types/s3-download-stream, @types/yaml}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>
