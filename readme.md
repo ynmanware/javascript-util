@@ -1,4 +1,4 @@
-# Javascript + NodeJs + Docker + Integration with Redis Docker-compose
+# Javascript + NodeJs + Docker + Integration with Redis through Docker-compose
 
 ### Create An Image 
 `docker build -t yogeshnm/javascript-util .`  
