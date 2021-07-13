@@ -26,7 +26,7 @@ const { encrypt, decrypt } = buildClient(
  * This function is an example of using the RsaKeyringNode
  * to encrypt and decrypt a simple string
  */
-module.exports =  async function rsaTest() {
+async function rsaTest() {
     /* You need to specify a name
      * and a namespace for raw encryption key providers.
      * The name and namespace that you use in the decryption keyring *must* be an exact,
@@ -140,3 +140,10 @@ async function generateRsaKeys() {
         privateKeyEncoding,
     })
 }
+
+
+(async () => {
+    const {cleartext, plaintext} = await rsaTest();
+    console.log(plaintext);
+    console.log(cleartext);
+})()
