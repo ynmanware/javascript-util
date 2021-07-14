@@ -104,8 +104,12 @@ async function rsaTest() {
     const { result } = await encrypt(keyring, cleartext, {
         encryptionContext: context,
     })
+    // encode it
+    const encData = result.toString('base64');
+
+
     /* Decrypt the data. */
-    const { plaintext, messageHeader } = await decrypt(keyring, result)
+    const { plaintext, messageHeader } = await decrypt(keyring, encData, {encoding: 'base64'});
 
     /* Grab the encryption context so you can verify it. */
     const { encryptionContext } = messageHeader
